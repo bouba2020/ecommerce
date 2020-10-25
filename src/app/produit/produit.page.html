@@ -1,9 +1,48 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>produit</ion-title>
+  <ion-toolbar color="#d3a718;" style="background-color: #d3a718;">
+    <ion-title style="color: #ffffff;">produit</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+<form>
+  <p style="text-align:center">
+  <img src="https://inosoft-company.000webhostapp.com/wp-content/uploads/2020/08/IMG-20200803-WA0011.jpg" width="120" height="120"/></p>
+<h1 style="text-align: center;">Ajouter un produit</h1>
+
+<ion-item>
+  <ion-label position="floating">Nom</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">prenom </ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Description</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+<ion-input type="file" name="file" id="file" >
+</ion-input>
+</ion-item>
+<ion-item>    
+<!-- Number type input -->
+<ion-label position="floating">Quantité</ion-label>
+<ion-input type="number" value=""></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Categorie</ion-label>
+  <ion-select value="cat" okText="Okay" cancelText="Annuler">
+    <ion-select-option value="chemise">Chemise</ion-select-option>
+    <ion-select-option value="pantalon">Pantalon</ion-select-option>
+    <ion-select-option value="shoes">Chaussures</ion-select-option>
+    <ion-select-option value="short">Shorts</ion-select-option>
+  </ion-select>
+</ion-item><br/>
+
+<ion-button color="#4a5f7d"   style="background-color:#4a5f7d">Success</ion-button>
+<ion-button type="reset" color="#d3a718" style="background-color:#d3a718"> Annuler</ion-button>
+</form>
 </ion-content>
